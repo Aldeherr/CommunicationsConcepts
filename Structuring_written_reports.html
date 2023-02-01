@@ -1,0 +1,955 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Estructura de reportes escritos &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Construyendo la presentación oral" href="Oral_Presentation.html" />
+    <link rel="prev" title="Preparándonos para comunicar nuestros Datos" href="Preparing_to_communicate_data.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Conceptos de la Comunicación de Datos
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Storytelling_W_Data.html">
+   Storytelling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Preparing_to_communicate_data.html">
+   Preparándonos para comunicar nuestros Datos
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Estructura de reportes escritos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Oral_Presentation.html">
+   Construyendo la presentación oral
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FStructuring_written_reports.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Structuring_written_reports.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipos-de-reportes-y-caracteristicas">
+   Tipos de reportes y Características
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#por-informacion">
+     Por información
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#por-estructura">
+     Por estructura
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estructura-para-un-journal">
+     Estructura para un journal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estructura-de-reporte-empresarial">
+     Estructura de reporte empresarial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#audiencia">
+     Audiencia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reproduccion-y-referencias">
+   Reproducción y referencias
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ventajas-de-la-reproducibilidad">
+     Ventajas de la reproducibilidad
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buenas-practicas">
+     Buenas practicas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reportes-claros-y-precisos">
+   Reportes claros y precisos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#frases-vacias">
+     Frases vacías
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sustantivos-concretos">
+     Sustantivos concretos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caso-de-estudio-reporte-sobre-riesgo-de-credito">
+   Caso de estudio: reporte sobre riesgo de crédito
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#story">
+     Story
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tech-or-no-tech">
+     Tech or no tech
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#viz">
+     Viz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#presentar">
+     Presentar
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Estructura de reportes escritos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipos-de-reportes-y-caracteristicas">
+   Tipos de reportes y Características
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#por-informacion">
+     Por información
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#por-estructura">
+     Por estructura
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estructura-para-un-journal">
+     Estructura para un journal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estructura-de-reporte-empresarial">
+     Estructura de reporte empresarial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#audiencia">
+     Audiencia
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reproduccion-y-referencias">
+   Reproducción y referencias
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ventajas-de-la-reproducibilidad">
+     Ventajas de la reproducibilidad
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buenas-practicas">
+     Buenas practicas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reportes-claros-y-precisos">
+   Reportes claros y precisos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#frases-vacias">
+     Frases vacías
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sustantivos-concretos">
+     Sustantivos concretos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caso-de-estudio-reporte-sobre-riesgo-de-credito">
+   Caso de estudio: reporte sobre riesgo de crédito
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#story">
+     Story
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tech-or-no-tech">
+     Tech or no tech
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#viz">
+     Viz
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#presentar">
+     Presentar
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="estructura-de-reportes-escritos">
+<h1>Estructura de reportes escritos<a class="headerlink" href="#estructura-de-reportes-escritos" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="#estructura-de-reportes-escritos">Estructura de reportes escritos</a></p>
+<ul>
+<li><p><a class="reference external" href="#tipos-de-reportes-y-caracter%C3%ADsticas">Tipos de reportes y Características</a></p>
+<ul>
+<li><p><a class="reference external" href="#por-informaci%C3%B3n">Por información</a></p></li>
+<li><p><a class="reference external" href="#por-estructura">Por estructura</a></p></li>
+<li><p><a class="reference external" href="#estructura-para-un-journal">Estructura para un journal</a></p></li>
+<li><p><a class="reference external" href="#estructura-de-reporte-empresarial">Estructura de reporte empresarial</a></p></li>
+<li><p><a class="reference external" href="#audiencia">Audiencia</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#reproducci%C3%B3n-y-referencias">Reproducción y referencias</a></p>
+<ul>
+<li><p><a class="reference external" href="#ventajas-de-la-reproducibilidad">Ventajas de la reproducibilidad</a></p></li>
+<li><p><a class="reference external" href="#buenas-practicas">Buenas practicas</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#reportes-claros-y-precisos">Reportes claros y precisos</a></p>
+<ul>
+<li><p><a class="reference external" href="#frases-vac%C3%ADas">Frases vacías</a></p></li>
+<li><p><a class="reference external" href="#sustantivos-concretos">Sustantivos concretos</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#caso-de-estudio-reporte-sobre-riesgo-de-cr%C3%A9dito">Caso de estudio: reporte sobre riesgo de crédito</a></p>
+<ul>
+<li><p><a class="reference external" href="#story">Story</a></p></li>
+<li><p><a class="reference external" href="#tech-or-no-tech">Tech or no tech</a></p></li>
+<li><p><a class="reference external" href="#data">Data</a></p></li>
+<li><p><a class="reference external" href="#viz">Viz</a></p></li>
+<li><p><a class="reference external" href="#presentar">Presentar</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<section id="tipos-de-reportes-y-caracteristicas">
+<h2>Tipos de reportes y Características<a class="headerlink" href="#tipos-de-reportes-y-caracteristicas" title="Permalink to this headline">#</a></h2>
+<p>Los reportes escritos también deben contener una estructura siempre y cuando seamos consientes de los datos y personas que recibirán la información.</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Reporte como información</p></li>
+</ul>
+<section id="por-informacion">
+<h3>Por información<a class="headerlink" href="#por-informacion" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Informativos</p></th>
+<th class="head"><p>Analíticos</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Escritos que llevan información actual descriptiva y corta, no poseen una estructura necesariamente e informan principal mente de los hechos actuales y tienen una estructura.</p></td>
+<td><p>Incluyen distintos análisis entre los escritos como, recomendaciones o relaciones. Pueden variar de acuerdo al tamaño</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="por-estructura">
+<h3>Por estructura<a class="headerlink" href="#por-estructura" title="Permalink to this headline">#</a></h3>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Reporte como estructura</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reporte Final</p></th>
+<th class="head"><p>Reporte Summary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Incluye muchos detalles sobre el análisis, hallazgos y resultados asi como los visuales. Al ser un reporte largo, podemos utilizarlo para audiencias con gran conocimiento técnico.</p></td>
+<td><p>Los reportes tipo resumen incluyen solo los insights mas importantes y las recomendaciones, asi como las visualizaciones. Este tipo de reporte es corto con menos de 5 paginas. Son un resumen del reporte final y pueden incluir enlaces del reporte principal. Los reportes summary están orientados a personas con toma de decision y que no necesariamente necesitan conocimiento técnico.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="estructura-para-un-journal">
+<h3>Estructura para un journal<a class="headerlink" href="#estructura-para-un-journal" title="Permalink to this headline">#</a></h3>
+<p align="center">
+<img src="https://www.ijasrjournal.org/wp-content/uploads/2014/04/Research-2015-paper.jpg" width="600">
+</p>
+<p>No hay una estructura 100% determinada; siempre depende de factores los factores que necesitemos cumplir. Aunque podemos basarnos en la siguiente estructura.</p>
+<ul class="simple">
+<li><p>Introducción</p>
+<ul>
+<li><p>Propósito</p>
+<ul>
+<li><p>Análisis del producto desde los reviews del website</p></li>
+<li><p>Puntuar predicciones basadas en las opiniones</p></li>
+</ul>
+</li>
+<li><p>Información de contexto</p>
+<ul>
+<li><p>Porque incremento los reviews negativos</p></li>
+</ul>
+</li>
+<li><p>Preguntas en el análisis</p>
+<ul>
+<li><p>Factores que afectan a una mala experiencia de usuario</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Cuerpo</p>
+<ul>
+<li><p>Datos</p>
+<ul>
+<li><p>Descripción de las tablas</p></li>
+</ul>
+</li>
+<li><p>Métodos</p>
+<ul>
+<li><p>Técnica utilizada (NLP y Random Forest)</p></li>
+</ul>
+</li>
+<li><p>Análisis</p>
+<ul>
+<li><p>Visuales</p>
+<ul>
+<li><p>Gráficas con las palabras mas comunes</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Resultados</p>
+<ul>
+<li><p>Descripción y visuales</p>
+<ul>
+<li><p>30 % de las malas puntuaciones están asociadas con la palabra “delay” y “shipping”</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Conclusiones</p>
+<ul>
+<li><p>Replanteamos las preguntas del análisis</p></li>
+<li><p>Resumir los resultados mas importantes</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="estructura-de-reporte-empresarial">
+<h3>Estructura de reporte empresarial<a class="headerlink" href="#estructura-de-reporte-empresarial" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Contexto empresarial</p></li>
+<li><p>Regla de [1-3-25]</p>
+<ul>
+<li><p>1 pagina de abstracto</p></li>
+<li><p>3 paginas de resumen ejecutivo</p></li>
+<li><p>25 paginas de detalle</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="audiencia">
+<h3>Audiencia<a class="headerlink" href="#audiencia" title="Permalink to this headline">#</a></h3>
+<p align="center">
+<img src="https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/know-your-audience-better.jpg?width=595&height=400&name=know-your-audience-better.jpg" width="600">
+</p>
+<p>Siempre debemos tener en cuenta nuestra audiencia o los receptores de nuestro reporte. <em>Cada stakeholder</em> esta interesado en diferentes partes de nuestro reporte, por ello debemos adaptar todas estas cosas.</p>
+<ul class="simple">
+<li><p>Los ejecutivos querrán ver un reporte de rápida lectura con una introducción al problema y su conclusion.</p></li>
+<li><p>El equipo técnico solo hará un vistazo en el cuerpo del reporte. Queriendo validar y entender los métodos aplicados de nuestro análisis.</p></li>
+</ul>
+</section>
+</section>
+<section id="reproduccion-y-referencias">
+<h2>Reproducción y referencias<a class="headerlink" href="#reproduccion-y-referencias" title="Permalink to this headline">#</a></h2>
+<p>La Reproducción y claridad de nuestros resultados es sumamente importante para nuestros resultados y conclusiones.</p>
+<p>Por ejemplo, si un amigo pastelero cocina galletas de chocolates. Es muy probable que podamos crear las galletas en nuestra casa siempre y cuando tengamos la receta y los utensilios de cocina.</p>
+<p>En el mundo de la data debemos ser capaces de obtener resultados idénticos aun con diferentes enviroments.</p>
+<section id="ventajas-de-la-reproducibilidad">
+<h3>Ventajas de la reproducibilidad<a class="headerlink" href="#ventajas-de-la-reproducibilidad" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Previene la duplicación de esfuerzo</p></li>
+<li><p>Construir sobre herramientas pre existentes</p></li>
+<li><p>Nos concentra en nuevos retos</p></li>
+<li><p>Permite la revision en pares o de forma individual</p></li>
+<li><p>Agnóstica en cuanto a herramientas, ya sea en excel, tableau u otra, tendremos los mismos resultados.</p></li>
+</ul>
+</section>
+<section id="buenas-practicas">
+<h3>Buenas practicas<a class="headerlink" href="#buenas-practicas" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p>Tener un track de como fueron generados los resultados</p>
+<ol class="simple">
+<li><p>Documentar correctamente los scripts</p></li>
+<li><p>Comentar el código</p></li>
+<li><p>Tener una lista de los paquetes utilizados y <code class="docutils literal notranslate"><span class="pre">env</span></code> utilizados.</p></li>
+<li><p>Usar programas de control de version.</p></li>
+</ol>
+</li>
+<li><p>Evitar la manipulación manual de la data.</p>
+<ol class="simple">
+<li><p>Importante versionar la data</p></li>
+<li><p>Guardar la data cruda y crear procesos intermedios</p></li>
+<li><p>Esto nos permite adaptarnos al problema</p></li>
+</ol>
+</li>
+<li><p>Tener control de la aleatoriedad (<code class="docutils literal notranslate"><span class="pre">randomness</span></code>)</p>
+<ol class="simple">
+<li><p>Establecer random seeds para pipelines de ML</p></li>
+<li><p>Usar variables para verificar los cambios en el modelo</p></li>
+</ol>
+</li>
+<li><p>Interpretabilidad</p>
+<ol class="simple">
+<li><p>El grado de facilidad de interpretación con que los stakeholders entiendan nuestro modelo</p></li>
+<li><p>Ayudan a la toma de decisiones</p></li>
+</ol>
+</li>
+<li><p>Citar bibliografías de forma correcta.</p></li>
+</ol>
+<p><strong>Para las citas bibliográficas podemos utilizar gestores de citas bibliográficas</strong></p>
+</section>
+</section>
+<section id="reportes-claros-y-precisos">
+<h2>Reportes claros y precisos<a class="headerlink" href="#reportes-claros-y-precisos" title="Permalink to this headline">#</a></h2>
+<p>La escritura en la ciencia de datos debe tener estos cuatros elementos básicos.</p>
+<ul class="simple">
+<li><p>Conciso</p></li>
+<li><p>Preciso</p></li>
+<li><p>Evita el mal entendimiento y confusion</p></li>
+<li><p>Mensajes con sentidos</p></li>
+</ul>
+<section id="frases-vacias">
+<h3>Frases vacías<a class="headerlink" href="#frases-vacias" title="Permalink to this headline">#</a></h3>
+<p>Debemos evitar hablar con frases vacías.</p>
+<ul class="simple">
+<li><p>Es interesante notar que</p></li>
+<li><p>EL hecho de</p></li>
+<li><p>Es bien sabido que</p></li>
+<li><p>Cabe señalar que</p></li>
+</ul>
+<p>Todos estos puntos conducen simplemente a una posible <strong>distracción</strong> a nuestro público, sin contenido. Por lo tanto debemos eliminar de nuestra presentación estas palabras.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Hecho directo</p></th>
+<th class="head"><p>Frase Vacía</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Las malas puntuaciones están asociadas con la palabra “retraso” y “envío”</p></td>
+<td><p>Otro punto importante es el hecho de que las puntuaciones negativas están asociadas con las palabras “retraso” y “envío”</p></td>
+</tr>
+</tbody>
+</table>
+<p>La Buena redacción técnica es concisa y directa. Por ello debemos escribir de forma concreta con pronombres y evitando el sobre uso de pronombres</p>
+<ul class="simple">
+<li><p>Eso</p></li>
+<li><p>Aquella</p></li>
+<li><p>Esto</p></li>
+</ul>
+</section>
+<section id="sustantivos-concretos">
+<h3>Sustantivos concretos<a class="headerlink" href="#sustantivos-concretos" title="Permalink to this headline">#</a></h3>
+<p>El uso de sustantivo aporta una comunicación directa y de mejor comprensión.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sin sustantivo</p></th>
+<th class="head"><p>Con sustantivo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Esto muestra una efectividad del 80% cuando predecimos los abandonos de clientes.</p></td>
+<td><p>El modelo muestra una efectividad del 80% cuando predecimos los abandonos del cliente</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>La voz activa: hace énfasis en el autor</p>
+<ul>
+<li><p>Se utiliza en entorno empresarial</p></li>
+</ul>
+</li>
+<li><p>Voz pasiva: cargada y difícil de leer.</p>
+<ul>
+<li><p>Se utiliza en un entorno académico</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="caso-de-estudio-reporte-sobre-riesgo-de-credito">
+<h2>Caso de estudio: reporte sobre riesgo de crédito<a class="headerlink" href="#caso-de-estudio-reporte-sobre-riesgo-de-credito" title="Permalink to this headline">#</a></h2>
+<p>Veamos un paso a paso de como escribir un reporte de riesgo crediticio. Tengamos en cuenta que un riesgo crediticio cuantifica la probabilidad de que un cliente no cumpla con los pagos acordados. El banco <strong>LOANME</strong> desea predecir con anterioridad si un nuevo cliente tiende a fallar en sus letras. Tenemos los datos crudos disponibles y podemos ejecutar un EDA y realizar modelos para entrenamiento y evaluación.</p>
+<section id="story">
+<h3>Story<a class="headerlink" href="#story" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Background: el porcentaje de clientes morosos aumento en los últimos 5 años.</p>
+<ul>
+<li><p>Debemos predecir que clientes tienen una alta probabilidad de ser morosos.</p></li>
+</ul>
+</li>
+<li><p>Insight: las personas con periodos de desempleo tienden a ser morosos</p></li>
+<li><p>Insight: las personas con ingresos bajos tienden a ser morosos</p></li>
+<li><p>Climax: predecir que personas serán morosos con un porcentaje de probabilidad del 95%.</p></li>
+<li><p>Next Steps: el ultimo paso consiste en realizar un ensayo controlado.</p></li>
+</ul>
+</section>
+<section id="tech-or-no-tech">
+<h3>Tech or no tech<a class="headerlink" href="#tech-or-no-tech" title="Permalink to this headline">#</a></h3>
+<p>Realizar todas las traducciones técnicas a palabras no técnicas.</p>
+</section>
+<section id="data">
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Audience persona</p>
+<ul>
+<li><p>Director del departamento de finanzas</p></li>
+<li><p>Intereses: decision en implementar un sistema automático de denegado.</p></li>
+<li><p>Data apropiada:</p>
+<ul>
+<li><p>Relaciones entre desempleados e ingresos y morosos</p></li>
+<li><p>Porcentaje de clientes morosos desde hace seis meses.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Estadística: Necesitamos algunos números agregados para poder parametrizar</p>
+<ul>
+<li><p>Edad Media</p></li>
+<li><p>Ingresos</p></li>
+<li><p>Radio de cambio</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="viz">
+<h3>Viz<a class="headerlink" href="#viz" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Un Gráfico de tipo boxplot vs condición de morosidad; mostrará la condición de los clientes y sus rangos.</p></li>
+<li><p>Un gráfico lineal con el porcentaje de cambio en los clientes morosos durante los próximos meses.</p></li>
+</ul>
+</section>
+<section id="presentar">
+<h3>Presentar<a class="headerlink" href="#presentar" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Quien? Director de Departamento de Finanzas</p></li>
+<li><p>Porque? importante decision a tomar</p></li>
+<li><p>Contenido: Hallazgos importantes y recomendaciones</p></li>
+<li><p>Canal:  enviar los resultados antes de la reunion</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Preparing_to_communicate_data.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Preparándonos para comunicar nuestros Datos</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Oral_Presentation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Construyendo la presentación oral</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

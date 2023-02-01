@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Construyendo la presentación oral &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Estructura de reportes escritos" href="Structuring_written_reports.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Conceptos de la Comunicación de Datos
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Storytelling_W_Data.html">
+   Storytelling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Preparing_to_communicate_data.html">
+   Preparándonos para comunicar nuestros Datos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Structuring_written_reports.html">
+   Estructura de reportes escritos
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Construyendo la presentación oral
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FOral_Presentation.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Oral_Presentation.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Construyendo la presentación oral
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#planeando-la-charla">
+   Planeando la charla
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proposito">
+     Propósito
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#audiencia">
+     Audiencia
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#message">
+     Message
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estructura">
+     Estructura
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#slides">
+   Slides
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#color">
+     Color
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fuentes">
+     Fuentes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-slide">
+     Text Slide
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualization-slide">
+     Visualization Slide
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#script">
+   Script
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buenas-practicas-de-la-charla">
+     Buenas practicas de la charla
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#una-presentacion-efectiva">
+     Una presentación efectiva
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evitar-errores-comunes">
+   Evitar errores comunes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#charlas-largas">
+     Charlas Largas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Propósito
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guiar-a-la-audiencia">
+     Guiar a la audiencia
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#envolver-a-la-audiencia">
+     Envolver a la audiencia
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mensaje-corporal">
+     Mensaje corporal
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tonalidad-de-la-voz">
+     Tonalidad de la voz
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Construyendo la presentación oral</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Construyendo la presentación oral
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#planeando-la-charla">
+   Planeando la charla
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proposito">
+     Propósito
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#audiencia">
+     Audiencia
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#message">
+     Message
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#estructura">
+     Estructura
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#slides">
+   Slides
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#color">
+     Color
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fuentes">
+     Fuentes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-slide">
+     Text Slide
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualization-slide">
+     Visualization Slide
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#script">
+   Script
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buenas-practicas-de-la-charla">
+     Buenas practicas de la charla
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#una-presentacion-efectiva">
+     Una presentación efectiva
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evitar-errores-comunes">
+   Evitar errores comunes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#charlas-largas">
+     Charlas Largas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Propósito
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guiar-a-la-audiencia">
+     Guiar a la audiencia
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#envolver-a-la-audiencia">
+     Envolver a la audiencia
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mensaje-corporal">
+     Mensaje corporal
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tonalidad-de-la-voz">
+     Tonalidad de la voz
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="construyendo-la-presentacion-oral">
+<h1>Construyendo la presentación oral<a class="headerlink" href="#construyendo-la-presentacion-oral" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="#planeando-la-charla">Planeando la charla</a></p>
+<ul>
+<li><p><a class="reference external" href="#prop%C3%B3sito">Propósito</a></p></li>
+<li><p><a class="reference external" href="#audiencia">Audiencia</a></p></li>
+<li><p><a class="reference external" href="#message">Message</a></p></li>
+<li><p><a class="reference external" href="#estructura">Estructura</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#slides">Slides</a></p>
+<ul>
+<li><p><a class="reference external" href="#color">Color</a></p></li>
+<li><p><a class="reference external" href="#fuentes">Fuentes</a></p></li>
+<li><p><a class="reference external" href="#text-slide">Text Slide</a></p></li>
+<li><p><a class="reference external" href="#visualization-slide">Visualization Slide</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#script">Script</a></p>
+<ul>
+<li><p><a class="reference external" href="#buenas-practicas-de-la-charla">Buenas practicas de la charla</a></p></li>
+<li><p><a class="reference external" href="#una-presentaci%C3%B3n-efectiva">Una presentación efectiva</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#evitar-errores-comunes">Evitar errores comunes</a></p>
+<ul>
+<li><p><a class="reference external" href="#charlas-largas">Charlas Largas</a></p></li>
+<li><p><a class="reference external" href="#prop%C3%B3sito-1">Propósito</a></p></li>
+<li><p><a class="reference external" href="#guiar-a-la-audiencia">Guiar a la audiencia</a></p></li>
+<li><p><a class="reference external" href="#envolver-a-la-audiencia">Envolver a la audiencia</a></p></li>
+<li><p><a class="reference external" href="#mensaje-corporal">Mensaje corporal</a></p></li>
+<li><p><a class="reference external" href="#tonalidad-de-la-voz">Tonalidad de la voz</a></p></li>
+</ul>
+</li>
+</ul>
+<p>Es una mala idea adentrarse a codear sin tener un plan de que estamos buscando y porque. De la misma forma es muy mala idea crear nuestros slides sin tener la idea de a quien vamos a presentar las slides, con que sentido y que contenido.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="planeando-la-charla">
+<h1>Planeando la charla<a class="headerlink" href="#planeando-la-charla" title="Permalink to this headline">#</a></h1>
+<p align="center">
+<img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg" width="500">
+</p>
+<p>Para presentar una charla debemos tener algunos puntos establecidos antes de pensar en nuestros argumentos y slides.</p>
+<section id="proposito">
+<h2>Propósito<a class="headerlink" href="#proposito" title="Permalink to this headline">#</a></h2>
+<p>Para definir el propósito de nuestra presentación debemos pensar como primer punto en el tipo de presentación que realizaremos. Es o no una presentación informativa?, si lo es, debemos informar por ejemplo sobre el numero de ratings positivos, negativos y palabras asociadas con las opiniones negativas.</p>
+<ul class="simple">
+<li><p>Informativa</p></li>
+<li><p>Instructiva</p></li>
+<li><p>Persuasiva</p></li>
+</ul>
+</section>
+<section id="audiencia">
+<h2>Audiencia<a class="headerlink" href="#audiencia" title="Permalink to this headline">#</a></h2>
+<p>Una vez entendemos el propósito de nuestra presentación, pensemos sobre la audiencia. Nuestra presentación esta dirigida a colegas a un manager, ejecutivo o un cliente.</p>
+<p>Pensemos en el tamaño de nuestra audiencia. Nos dirigimos a un pequeño grupo de 10 personas o estaremos en una conferencia con mas de 100 personas.</p>
+<ul class="simple">
+<li><p>Quien es nuestra audiencia</p></li>
+<li><p>Que tan grande es nuestra audiencia</p></li>
+</ul>
+</section>
+<section id="message">
+<h2>Message<a class="headerlink" href="#message" title="Permalink to this headline">#</a></h2>
+<p align="center">
+<img src="https://cdn.pixabay.com/photo/2016/04/20/08/21/entrepreneur-1340649_960_720.jpg" width="500">
+</p>
+<p>Estudios advierten que nuestra audiencia en promedio olvidan el 90% de lo que se habla en una presentación una semana después. Si recuerdan al menos una cosa de nuestra presentación, que quisiéramos que fuese?.</p>
+<p>Podemos trabajar desde esa pregunta y luego podemos incluir los demás elementos a nuestra presentación.</p>
+<p>Nuestras palabras iniciales deberían captar a nuestra audiencia y servir como introducción de aquello que deseamos que recuerden.</p>
+<ul class="simple">
+<li><p>Luego de una semana se olvida casi el 90%</p></li>
+<li><p>A partir de esta afirmación que deseamos comunicar.</p></li>
+<li><p>Palabras  iniciales</p>
+<ul>
+<li><p>Deben captar la audiencia</p>
+<ul>
+<li><p>E.g: los ratings negativos ahuyentan los clientes del sitio web</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Mensaje Central: es aconsejable que solo sea una oración</p>
+<ul>
+<li><p>Los envíos retrasados es la causa principal de los review negativos; las acciones inmediatas son necesarias para revertir la situación.</p></li>
+</ul>
+</li>
+<li><p>Mensaje de Cierre: resume la presentación y las fortalezas del mensaje central</p>
+<ul>
+<li><p>E.g: Actualmente las ventas disminuyen, por el contrario las opiniones negativas han aumentado. Este problema se debe principalmente a los envíos retrasados. Se necesitan acciones contundentes para revertir la situación.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="estructura">
+<h2>Estructura<a class="headerlink" href="#estructura" title="Permalink to this headline">#</a></h2>
+<p align="center">
+<img src="https://www.nucorbuildingsgroup.com/wp-content/uploads/2021/09/custom-building-hero-truecore-nbs.jpg" width="500">
+</p>
+<ul class="simple">
+<li><p>Introducción</p>
+<ul>
+<li><p>Es un contexto rápido de la problemática y a la vez capta la atención de la audiencia.</p></li>
+</ul>
+</li>
+<li><p>Métodos</p>
+<ul>
+<li><p>Esta parte de la estructura depende del nivel de experiencia técnica de la audiencia.</p></li>
+<li><p>Es un análisis de el modelo</p></li>
+</ul>
+</li>
+<li><p>Conclusión</p>
+<ul>
+<li><p>Hacemos referencia a la introducción y agregamos las conclusiones del hecho junto a las recomendaciones activas a seguir. Esta técnica permite cautivar y facilita la atención de inicio a fin.</p></li>
+</ul>
+</li>
+<li><p>Delinear</p>
+<ul>
+<li><p>Es el momento para presentar los gráficos que deseamos usar por secciones y ordenes. Deberíamos tener cerca de 5 secciones evitando siempre sobrecargar.</p>
+<ul>
+<li><p>Razones para el análisis</p></li>
+<li><p>Análisis exploratorio</p></li>
+<li><p>Sentimientos sobre el análisis</p></li>
+<li><p>Conclusiones</p></li>
+<li><p>Acción-reacción</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="slides">
+<h1>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">#</a></h1>
+<p>De forma generalizada los slides son una herramienta de apoyo para nuestra presentación. De igual forma deben seguir unos lineamientos.</p>
+<ul class="simple">
+<li><p>Apoyan nuestra historia</p></li>
+<li><p>Slides muy precisos y concisos</p></li>
+<li><p>Contar los slides o precisar tiempos = mala métrica</p>
+<ul>
+<li><p>Podemos concentrarnos en un mensaje por slide</p></li>
+</ul>
+</li>
+</ul>
+<section id="color">
+<h2>Color<a class="headerlink" href="#color" title="Permalink to this headline">#</a></h2>
+<p>Los colores, al igual que las partes de la charla, deben tener un propósito claro del porque. Si no posee un significado relevante el mismo, debe omitirse.</p>
+<p>Tomemos en cuenta aspectos estéticos como el contraste con el fondo de nuestras diapositivas y los colores; también debemos ser inclusivos (daltonismo, protanipia, etc.)</p>
+</section>
+<section id="fuentes">
+<h2>Fuentes<a class="headerlink" href="#fuentes" title="Permalink to this headline">#</a></h2>
+<p align="center">
+<img src="https://newenglandrepro.com/wp-content/uploads/2016/08/BP-Serif-SansSerif-Graphic1-862x518.jpg" width="500">
+</p>
+<p>Las fuentes facilitan la comprensión del mensaje. Los expertos no concuerdan en cual es mas fácil de leer; <strong>San-Serif</strong> o <strong>Serif</strong>.  Aunque en términos generales, <strong>Serif</strong> se utiliza para textos imprimibles y <strong>Sans-Serif</strong> para textos que sean leídos en pantalla.</p>
+<blockquote>
+<div><p>Comic Sans Ms es apropiado para captar la atención en niños.</p>
+</div></blockquote>
+<p>Normalmente las slides son difíciles de leer, no por el tipo de fuente sino por la <strong>cantidad de texto</strong> o por el <strong>tamaño del texto</strong>.</p>
+<p>Podemos hacer uso de otras características</p>
+<ul class="simple">
+<li><p>Muchas otras fuentes</p></li>
+<li><p>Espacio entre letras</p></li>
+<li><p><strong>Bold</strong>, <em>italic</em> o tamaños</p></li>
+</ul>
+</section>
+<section id="text-slide">
+<h2>Text Slide<a class="headerlink" href="#text-slide" title="Permalink to this headline">#</a></h2>
+<p>Incluir demasiado texto produce un impacto negativo, desde el punto de vista de trabajo cognitivo. Al incluir mucho texto la audiencia tiende a leer todo, en lugar de prestar atención al ponente.</p>
+<p align="center">
+<img src="https://www.idgcdn.com.au/article/images/750x750/dimg/m_img_34393.jpg" width="500">
+</p>
+<p>Una practica mas recomendable, es escribir solamente los <strong>puntos principales</strong> en lugar de textos largos. Podemos <strong>encerrar</strong> nuestro título con un headlight.</p>
+<p align="center">
+<img src="./_static/images/ch04-1.png" width="500">
+</p>
+<p>El <strong>layering</strong> es una técnica que divide una slide compleja en pequeños puntos. La idea de layering es aclarar la idea y aportar una estructura limpia, facilitando en enfoque de la charla dividiendo el tema en pequeños puntos</p>
+</section>
+<section id="visualization-slide">
+<h2>Visualization Slide<a class="headerlink" href="#visualization-slide" title="Permalink to this headline">#</a></h2>
+<p align="center">
+<img src="./_static/images/ch04-2.png" width="500">
+</p>
+<p>Cuando necesitamos dar explicaciones amplias podemos apoyarnos en las <strong>Viz</strong>. E igualmente hacer uso del layering y highlights para apoyar un punto principal.</p>
+<p align="center">
+<img src="./_static/images/ch04-3.png" width="500">
+</p>
+<blockquote>
+<div><p>Utilizar una o dos gráficas por slide con tamaño original.</p>
+</div></blockquote>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="script">
+<h1>Script<a class="headerlink" href="#script" title="Permalink to this headline">#</a></h1>
+<p align="center">
+<img src="https://raindance.org/wp-content/uploads/2021/08/Screenplay.jpg" width="600">
+</p>
+<p>Escribir nuestro scripts es una buena practica para preparar el contenido de la charla y familiarizarnos con el contenido (No memorizarlo).</p>
+<ul class="simple">
+<li><p>Practicar: ensayar lo más cerca posible de la realidad</p>
+<ul>
+<li><p>Utilizar los slides preparados</p></li>
+<li><p>Hablar en voz clara y alta</p></li>
+<li><p>Detectar factores de distracción (palabras como ‘e’, ‘uhm’, ‘básicamente’)</p></li>
+<li><p>Encontrar palabras conectoras para utilizar entre los slides</p></li>
+<li><p>Preparar el Q&amp;A</p>
+<ul>
+<li><p>Anticipar posibles preguntas.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Debemos estar consientes que nuestras <strong>emociones</strong> son importantes, si nuestra audiencia nota inseguridad en nuestra voz, podemos perder convencimiento sobre la charla.</p>
+<section id="buenas-practicas-de-la-charla">
+<h2>Buenas practicas de la charla<a class="headerlink" href="#buenas-practicas-de-la-charla" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Espacio de atención reducido: tener en mente de 5 a 20 minutos de charla, mas aya de eso nuestra audiencia perderá el interés.</p></li>
+<li><p>Hablarle a la audiencia (no hablar para ellos)</p></li>
+<li><p>Desarrollemos una relación de dos vías: mostremos empatía y actuemos como un guía.</p></li>
+<li><p>Timing: asegurarnos de no durar mas del tiempo asignado</p></li>
+<li><p>Ritmo: mantener una ritmo lingüístico moderado y con pausas entre slides.</p></li>
+<li><p>Siempre mostrarse abierto a preguntas durante o luego de la presentación.</p></li>
+</ul>
+</section>
+<section id="una-presentacion-efectiva">
+<h2>Una presentación efectiva<a class="headerlink" href="#una-presentacion-efectiva" title="Permalink to this headline">#</a></h2>
+<p align="center">
+<img src="https://www.alonshklarek.com/wp-content/uploads/2020/06/Image-from-iOS-1.jpg" width="800">
+</p>
+<ul class="simple">
+<li><p>Menos es MAS</p></li>
+<li><p>Le habla a la audiencia</p></li>
+<li><p>El mensaje que transmite debe ser consistente y persistente</p></li>
+<li><p>Requiere práctica si es necesario.</p></li>
+<li><p>Se anticipa a preguntas</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="evitar-errores-comunes">
+<h1>Evitar errores comunes<a class="headerlink" href="#evitar-errores-comunes" title="Permalink to this headline">#</a></h1>
+<p>Para evitar errores primero, necesitamos recapitular todas las buenas practicas.</p>
+<ul class="simple">
+<li><p>Planear la charla</p></li>
+<li><p>Prepararla y practicarla</p></li>
+<li><p>Presentarla</p></li>
+</ul>
+<p>Para presentarla debemos tener en cuenta algunos errores comunes y evitarlos.</p>
+<section id="charlas-largas">
+<h2>Charlas Largas<a class="headerlink" href="#charlas-largas" title="Permalink to this headline">#</a></h2>
+<p>las charlas largas tienden a ser inefectivas, la atención de nuestra audiencia se torna apática a tanto contenido y sin mucho espacio a tiempo para preguntas y respuesta.</p>
+</section>
+<section id="id1">
+<h2>Propósito<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>Establezcamos siempre el propósito al principio para un mejor entendimiento, esto le dará mas importancia a nuestro hallazgos y dejaremos un mejor recuerdo.</p>
+</section>
+<section id="guiar-a-la-audiencia">
+<h2>Guiar a la audiencia<a class="headerlink" href="#guiar-a-la-audiencia" title="Permalink to this headline">#</a></h2>
+<p>Como ponentes es necesario GUIAR a la audiencia con una secuencia que mantenga la atención sin dejar todas nuestras conclusiones para el final de la charla.</p>
+</section>
+<section id="envolver-a-la-audiencia">
+<h2>Envolver a la audiencia<a class="headerlink" href="#envolver-a-la-audiencia" title="Permalink to this headline">#</a></h2>
+<p align="center">
+<img src="https://www.philcooke.com/wp-content/uploads/mlk-jr-05-1-e1511916951679.jpg" width="900">
+</p>
+<p>Un error común es presentar nuestro script como un monologo, esto aparta a nuestra audiencia y no permite involucrarlos. Podemos realizar una introducción fuerte para establecer una relación de quien somos y porque estamos realizando la presentación</p>
+<blockquote>
+<div><p>Buenos días mi nombre es Aldeir y estoy aquí para presentar <em>como afectan las puntuaciones negativas a los activos empresariales</em></p>
+</div></blockquote>
+<p>Nuestra audiencia no es consciente de nuestro proceso de pensamiento; siempre debemos establecer nuestras suposiciones clave. Podemos hacernos preguntas a nosotros mismo para conectar con la audiencia.</p>
+<p>Una técnica util para sostener la atención de la audiencia, es relacionando cada slide con la idea principal; esta forma se sentirá como un solo cuento.</p>
+</section>
+<section id="mensaje-corporal">
+<h2>Mensaje corporal<a class="headerlink" href="#mensaje-corporal" title="Permalink to this headline">#</a></h2>
+<p>Si lo que importa es el mensaje… el ponente es el centro de la presentación. Hagamos énfasis en un lenguaje y gestos naturales.</p>
+<p>Posturas correctas y sonrisas son un punto a favor de nuestro mensaje corporal.</p>
+</section>
+<section id="tonalidad-de-la-voz">
+<h2>Tonalidad de la voz<a class="headerlink" href="#tonalidad-de-la-voz" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Utilizar diferentes tonalidades de voz</p>
+<ul>
+<li><p>Velocidad</p>
+<ul>
+<li><p>Fast: urgencia, excitación y emoción</p></li>
+<li><p>Slow: puntos importantes o fundamentales</p></li>
+</ul>
+</li>
+<li><p>Volumen</p>
+<ul>
+<li><p>Live: hablar alto</p></li>
+<li><p>Online: comprobar el micrófono</p></li>
+</ul>
+</li>
+<li><p>Entonación: nuestro tono debe mostrarse entusiasmado e interesado en el tema.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Structuring_written_reports.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Estructura de reportes escritos</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

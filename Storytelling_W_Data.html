@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Storytelling &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preparándonos para comunicar nuestros Datos" href="Preparing_to_communicate_data.html" />
+    <link rel="prev" title="Conceptos de la Comunicación de Datos" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Conceptos de la Comunicación de Datos
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Storytelling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Preparing_to_communicate_data.html">
+   Preparándonos para comunicar nuestros Datos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Structuring_written_reports.html">
+   Estructura de reportes escritos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Oral_Presentation.html">
+   Construyendo la presentación oral
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FStorytelling_W_Data.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Storytelling_W_Data.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-del-storytelling">
+   Fundamentos del Storytelling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-storytelling">
+   Data Storytelling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#como-construimos-un-storytelling">
+     Como construimos un Storytelling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#trasladando-resultados-tecnicos">
+   Trasladando resultados tecnicos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conciencia">
+     Conciencia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analogia">
+     Analogia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jerga-tecnica">
+     Jerga Tecnica
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enfocate-en-el-impacto">
+     Enfocate en el impacto
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#humildad">
+     Humildad
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-impacto-y-el-proceso-en-la-toma-de-decision">
+   El impacto y el proceso en la toma de decision
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#narrativa-convincente">
+     Narrativa Convincente
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#narrativa-estructurada">
+     Narrativa Estructurada
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#background">
+       Background
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#insight-1">
+       Insight 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#insight-2">
+       Insight 2
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#climax">
+       Climax
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sig-paso">
+       Sig. Paso
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion-al-construir-una-narrativa">
+     Conclusion al construir una narrativa…
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Storytelling</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-del-storytelling">
+   Fundamentos del Storytelling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-storytelling">
+   Data Storytelling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#como-construimos-un-storytelling">
+     Como construimos un Storytelling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#trasladando-resultados-tecnicos">
+   Trasladando resultados tecnicos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conciencia">
+     Conciencia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analogia">
+     Analogia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jerga-tecnica">
+     Jerga Tecnica
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enfocate-en-el-impacto">
+     Enfocate en el impacto
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#humildad">
+     Humildad
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-impacto-y-el-proceso-en-la-toma-de-decision">
+   El impacto y el proceso en la toma de decision
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#narrativa-convincente">
+     Narrativa Convincente
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#narrativa-estructurada">
+     Narrativa Estructurada
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#background">
+       Background
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#insight-1">
+       Insight 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#insight-2">
+       Insight 2
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#climax">
+       Climax
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sig-paso">
+       Sig. Paso
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion-al-construir-una-narrativa">
+     Conclusion al construir una narrativa…
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="storytelling">
+<h1>Storytelling<a class="headerlink" href="#storytelling" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="#storytelling">Storytelling</a></p>
+<ul>
+<li><p><a class="reference external" href="#fundamentos-del-storytelling">Fundamentos del Storytelling</a></p></li>
+<li><p><a class="reference external" href="#data-storytelling">Data Storytelling</a></p>
+<ul>
+<li><p><a class="reference external" href="#como-construimos-un-storytelling">Como construimos un Storytelling</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#trasladando-resultados-tecnicos">Trasladando resultados tecnicos</a></p>
+<ul>
+<li><p><a class="reference external" href="#conciencia">Conciencia</a></p></li>
+<li><p><a class="reference external" href="#analogia">Analogia</a></p></li>
+<li><p><a class="reference external" href="#jerga-tecnica">Jerga Tecnica</a></p></li>
+<li><p><a class="reference external" href="#enfocate-en-el-impacto">Enfocate en el impacto</a></p></li>
+<li><p><a class="reference external" href="#humildad">Humildad</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#el-impacto-y-el-proceso-en-la-toma-de-decision">El impacto y el proceso en la toma de decision</a></p>
+<ul>
+<li><p><a class="reference external" href="#narrativa-convincente">Narrativa Convincente</a></p></li>
+<li><p><a class="reference external" href="#narrativa-estructurada">Narrativa Estructurada</a></p>
+<ul>
+<li><p><a class="reference external" href="#background">Background</a></p></li>
+<li><p><a class="reference external" href="#insight-1">Insight 1</a></p></li>
+<li><p><a class="reference external" href="#insight-2">Insight 2</a></p></li>
+<li><p><a class="reference external" href="#climax">Climax</a></p></li>
+<li><p><a class="reference external" href="#sig-paso">Sig. Paso</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#conclusion-al-construir-una-narrativa">Conclusion al construir una narrativa…</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<section id="fundamentos-del-storytelling">
+<h2>Fundamentos del Storytelling<a class="headerlink" href="#fundamentos-del-storytelling" title="Permalink to this headline">#</a></h2>
+<p>
+<img src="https://bloximages.newyork1.vip.townnews.com/koamnewsnow.com/content/tncms/assets/v3/editorial/3/2f/32f0ed1f-8ed2-5e8b-930b-3dbbafc25c1c/6393f7e6b01e9.image.jpg?resize=1396%2C785" width="800"/>
+</p>
+<p>Antes de adentrarnos en los conceptos fundamentales y habilidades de comunicacion, podemos dimensionar brevemente la importacia de una comunicacion efectiva. En 1986 durante el lanzamiento del transbordador del Challenger se efectuo una fuga en su tanque de gas, esto llevo a la explosion de la nave momentos despues de su despege, ocasionando la muerte de a sus siete astronautas a bordo.</p>
+<p>Posteriormente en una investigacion de la NASA, se dictamino que el desprendimiento de dos sellos redundantes en una junta del transbordador fueron los culpables iniciales del accidente. Previo al despegue de los transbordadores, empleados de la NASA advirtieron sobre condiciones climaticas desfavorables para el despegue del challenger, sin embargo el mensaje no fue tomado en cuenta. Quizas el ejemplo puede ser algo exagerado, pero muestra la importancia de saber comunicar (para bien o mal) de forma estrategica.</p>
+</section>
+<section id="data-storytelling">
+<h2>Data Storytelling<a class="headerlink" href="#data-storytelling" title="Permalink to this headline">#</a></h2>
+<p>
+<img src="_static\images\ch01-1.png" >
+</p>
+<p>Cualquiera estrategia de comunicación requiere una serie de pasos para crear una historia efectiva. Pero, <strong>Porque necesitamos una historia?</strong>; los profesionales de datos pasan gran parte de su tiempo procesando, extrayendo o modelando datos, sin embargo no podemos dejar de lado la comunicacion de nuestros <strong>insights</strong>. Incluso, de nada nos sirve encontrar los mejores insights, si no sabemos comunicar y tener un impacto real a partir de los datos. En base a esto podemos considerar la importancia de un las historias y la forma en que comunicamos nuestros datos.</p>
+<blockquote>
+<div><p>En el mundo de la data, los <strong>insights</strong> se refiere al analisis de los datos y posterior entendimiento que ayudan a entender que esta sucediendo en un contexto especifico, permitiendo asi acciones estrategicas sobre la situacion.</p>
+</div></blockquote>
+<blockquote>
+<div><p>El <strong>storytelling</strong> podemos definirlo como, el mecanismo para compartir <strong>insights</strong> con una narrativa convincente y una visualizacion de datos efectiva.</p>
+</div></blockquote>
+<p>Las anecdotas permiten a las personas imaginar y dimensionar el impacto de las historias, por esta razon un storytelling efectivo y con datos que respalden la historia, se puede convertir en una herramienta poderosa para la toma de decisiones estrategicas e incentiva el cambio de futuras situaciones a traves de los datos.</p>
+<ul class="simple">
+<li><p>Anecdotas = Imaginacion</p></li>
+<li><p>Historias = hacen nuestra presentacion memorable y facil de recordar.</p></li>
+<li><p>Agregar valores = aportan contexto</p></li>
+<li><p>Capturamos la atencion de la audiencia</p></li>
+<li><p>Facilitamos la toma de decisiones</p></li>
+<li><p>Impulsamos las acciones y cambios en la empresa.</p></li>
+</ul>
+<section id="como-construimos-un-storytelling">
+<h3>Como construimos un Storytelling<a class="headerlink" href="#como-construimos-un-storytelling" title="Permalink to this headline">#</a></h3>
+<p><img alt="DS" src="https://imageio.forbes.com/blogs-images/brentdykes/files/2016/03/data_story3_sq-e1468351021408.png?format=png&amp;width=1200" /></p>
+<p>Podemos pensar en dos conceptos basicos para crear un storytelling efectivo.</p>
+<ul class="simple">
+<li><p><strong>3 Minutos de historia</strong>: si tenemos solo 3 minutos para contar nuestra historia, en que cosas nos enfocariamos.</p></li>
+<li><p><strong>Big idea</strong>: nos invita escribir nuestra historia en una sola oracion y buscar el punto central de la misma.</p></li>
+</ul>
+<p>Estos conceptos nos ayudan a articular de forma correcta y concisa nuestra historia.</p>
+<p>Existen tres elementos importantes dentro de un storytelling.</p>
+<ul class="simple">
+<li><p>Data</p></li>
+<li><p>Narrativa</p></li>
+<li><p>Visuales</p></li>
+</ul>
+<p>Estos elementos nos permiten crear una historia muy ingeniosa, resultando en enseñanzas claras y explicables sobre el analisis de datos. Estos permite a la audiencia entender los conocimiento de forma concisa proporcionandoles por hechos concretos y especificos.</p>
+<p><strong>Data</strong></p>
+<p>Es importante que al construir nuestra historia solo se incluya todo aquel conocimiento aplicable a la situacion, partiendo de los modelos o analisis que se haya desarrollado para esta situacion. Las historias deben basarse en datos confiables y efectivos, por ello, debemos dejar fuera de esta formula los conocimientos sin bases solidas, siendo mas importante, que nuestra historia incluya actionable insights (datos que conducen a acciones).</p>
+<p>En resumen podemos decir que nuestra data debe cumplir con 3 puntos basicos.</p>
+<ul class="simple">
+<li><p>Resultados y hallazgos (que sean influyentes)</p></li>
+<li><p>Relevante</p></li>
+<li><p>Credibilidad y efectiva</p></li>
+</ul>
+<p><strong>Narrativa</strong></p>
+<p>Una buena historia es sinonimo de una narrativa convincente y facil de entender que incluye solo los puntos necesarios para un drive change.</p>
+<p>Muchas veces nos vemos tentandos a incluir hechos que no estan conectados con lo que deseamos comunicar; una narrativa convincente se compone de una idea central e ideas alrededor que ayudan a mantener un contexto claro de la idea central. Quienes son?, Que necesitan saber?; cada data story sigue una sequencia lineal, en la cual cada punto esclarecido nos sirve para construir una mejor comprension del siguiente hasta llegar a la conclusion final.</p>
+<p>Podemos resumir nuestra narrativa dentro de los siguientes pasos:</p>
+<ul class="simple">
+<li><p>Convincente y facil de entender</p></li>
+<li><p>Puntos esenciales</p></li>
+<li><p>Impulsen al cambio</p></li>
+<li><p>Punto central</p>
+<ul>
+<li><p>Evitar hechos desconectados</p></li>
+<li><p>Tener un punto central</p></li>
+</ul>
+</li>
+<li><p>Contexto explicativo</p>
+<ul>
+<li><p>Entender la audiencia y todo el background</p></li>
+<li><p>Esclarecer los hechos a la audiencia</p></li>
+</ul>
+</li>
+<li><p>Sequencia lineal</p></li>
+</ul>
+<p><strong>Visuals</strong></p>
+<p>Debemos siempre tener en cuenta que nuestros graficos deben ser.</p>
+<ul class="simple">
+<li><p>Simples</p></li>
+<li><p>Con engaging (que capten a la audiencia)</p></li>
+<li><p>Sin viz engañosas</p></li>
+</ul>
+</section>
+</section>
+<section id="trasladando-resultados-tecnicos">
+<h2>Trasladando resultados tecnicos<a class="headerlink" href="#trasladando-resultados-tecnicos" title="Permalink to this headline">#</a></h2>
+<p>
+<img src="_static\images\ch01-2.png" >
+</p>
+<p>El siguiente paso para crear nuestro storytelling, consiste en saber, cual es el nivel tecnico/tecnologico de nuestra audiencia. Cabe resaltar que el conocimiento tecnico es continuo puede que nuestro un gerente de marca sepa que es una distribucion o hipotesis; con lo cual es muy debatible que tan tecnica sea nuestra proxima audiencia. Para efectos practicos dividiremos la audiencia en tecnicos y no tecnicos.</p>
+<p>Nuestra audiencia no tenica normalmente se vera atraida con los resultados finales de nuestros insights y sus posibles implicaciones, mientras que una audiencia puramente tecnica se vera atraida por nuestros metodos.</p>
+<p><strong>Que tan tecnicos?</strong></p>
+<p>Si tenemos una reunion con el jefe del departamento de logistica, al mismo no le interesara saber acerca de nuestr modelo o hyper-parametros de ajuste. En su lugar, le gustaria conocer como afecta captacion de datos de forma incorrecta a las predicciones logistica. Esto incentiva al jefe de logistica a advertir a sus agentes minorista una accion de mejor captacion de datos para mejores resultados y menos problemas de envios.</p>
+<p>Todo esto nos ayuda a traducir nuestros resultados tecnicos a historias.</p>
+<ul class="simple">
+<li><p>Facil de entender</p></li>
+<li><p>Captar la atencion de la audiencia</p></li>
+<li><p>Facilitamos la toma de decisones</p></li>
+<li><p>Impulsamos los cambios</p></li>
+<li><p>Fijamos una estrategia</p></li>
+</ul>
+<p>Otros elementos que no pueden faltar al traslador nuestros resultados tecnicos son tener conciencia de nuestra audiencia, las analogias, jergas tecnicas y como nos enfocamos en el impacto.</p>
+<section id="conciencia">
+<h3>Conciencia<a class="headerlink" href="#conciencia" title="Permalink to this headline">#</a></h3>
+<p>Tener una percepcion correcta de nuestra audiencia es clave para una exitosa historia. Algunas preguntas nos pueden ayudar…</p>
+<ul class="simple">
+<li><p>Que tanto saben? nos permite ajustar el contenido de nuestra historia en base a la experiencia tecnica de cada persona.</p></li>
+<li><p>Que necesitan entender? es importante establecer el nivel de entendimiento de la situacion y hasta donde queremos que llegue, es importante tener un nivel alto de conversacion con nuestra audiencia</p></li>
+<li><p>Que nivel de informacion necesitan? nuestra historia necesita ayudar a la audiencia a entender de que trata nuestro poyecto, explicando por ejemplo la relacion entre los diferentes comportamientos del cliente.</p></li>
+</ul>
+<p>La tecnica ADEPT recomendada por Kalid Azad puede ser muy util para establecer esto.</p>
+</section>
+<section id="analogia">
+<h3>Analogia<a class="headerlink" href="#analogia" title="Permalink to this headline">#</a></h3>
+<p><img alt="" src="https://pbs.twimg.com/media/E-JWjwrVUAQT78K.jpg" /></p>
+<p>En lugar de explicar como funciona una red neuronal de propagacion hacia adelante o hacia atras, podemos comparar la forma en que un bebe aprende con retroalimentacion positiva o negativa y como funciona.</p>
+</section>
+<section id="jerga-tecnica">
+<h3>Jerga Tecnica<a class="headerlink" href="#jerga-tecnica" title="Permalink to this headline">#</a></h3>
+<p>Es necesario que utilizemos un lenguaje flexible y sepamos escoger las palabras adecuadas para nuestra audiencia. Necesitamos que nuestro lenguaje llegue la mayor cantidad de personas; la jerga tecnica puede ayudarnos a llegar a una cantidad de personas aunque puede resultar molestoso para algunas personas, es cuestion de saber cuidar la eleccion de nuestras palabras.</p>
+<p>Los acronimos puede ser una tecnica que nos ayuda a compactar el conocimiento sin embargo puede confundir a nuestra audiencia. Puede que algunos sepan que significa <strong>EDA</strong>, mientras otros no.</p>
+</section>
+<section id="enfocate-en-el-impacto">
+<h3>Enfocate en el impacto<a class="headerlink" href="#enfocate-en-el-impacto" title="Permalink to this headline">#</a></h3>
+<p>Si estamos interesados en mostrar detalles tecnicos, un story persuasivo se enfoca en el impacto por encima del proceso. Si nos encontramos hablando de adoptar nuevas tecnologias, deberiamos enfocarnos en el impacto que provocaria la tecnologia sobre el equipo y los nuevos tiempos de entrega.</p>
+<p>En lugar de explicar las predicciones de nuestro modelos y sus salidas, deberiamos enfocarnos en los beneficios financieros o tiempos.</p>
+</section>
+<section id="humildad">
+<h3>Humildad<a class="headerlink" href="#humildad" title="Permalink to this headline">#</a></h3>
+<p>Por ultimo debemos ser concientes que no todos los datos tecnicos pueden ser obviados, por lo tanto siempre nos sera necesario utilizar alguna terminologia complicada que puede resultar complicada o molesta para nuestra audiencia. Es bueno que nos sintamos proactivo a preguntas tecnicas aun cuando sean sencillaz de responder. Lo importante es mantener una postura abierta hacia el dialogo, con mucha preparacion hacia posibles preguntas utiliando “nuevamente” estrategias y tratando de mantener todas las dudas claras.</p>
+</section>
+</section>
+<section id="el-impacto-y-el-proceso-en-la-toma-de-decision">
+<h2>El impacto y el proceso en la toma de decision<a class="headerlink" href="#el-impacto-y-el-proceso-en-la-toma-de-decision" title="Permalink to this headline">#</a></h2>
+<section id="narrativa-convincente">
+<h3>Narrativa Convincente<a class="headerlink" href="#narrativa-convincente" title="Permalink to this headline">#</a></h3>
+<p>Luego de encontrar insights en nuestros datos, tenemos la obligacion de darle un sentido a nuestra presentacion con respecto a nuestra audiencia. En escencia es encontar la manera de conectar eventos que organicen la informacion para captar la audiencia y generar interes por los resultados de la informacion que compartimos.</p>
+</section>
+<section id="narrativa-estructurada">
+<h3>Narrativa Estructurada<a class="headerlink" href="#narrativa-estructurada" title="Permalink to this headline">#</a></h3>
+<p>Una narrativa estructurada nos ayuda en gran forma a darle sentido a nuestra presentacion. Existen muchas formas de estructurar una narracion, aunque podemos reducir este marco de trabajo en los 5 pasos de una narrativa estructurada.</p>
+<p>
+<img src="_static\images\ch01-3.png" >
+</p>
+<section id="background">
+<h4>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Que nos motivo a realizar <em>X</em> analisis?</p></li>
+<li><p>Que cambios nos garantizan el correcto analisis.</p></li>
+<li><p>Hacia quien va enfocado nuestro analisis</p>
+<ul>
+<li><p>Clientes</p></li>
+<li><p>Empleados</p></li>
+<li><p>Alguien mas?</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="insight-1">
+<h4>Insight 1<a class="headerlink" href="#insight-1" title="Permalink to this headline">#</a></h4>
+<p>Una vez el problema ha sido planteado, proporcionamos mas evidencia de aquellos factores que contribuyeron al problema. Debemos incluir solo informacion relevante.</p>
+<ul class="simple">
+<li><p>Que contribuyo al problema</p></li>
+<li><p>Incluir solo informacion relevante</p></li>
+</ul>
+</section>
+<section id="insight-2">
+<h4>Insight 2<a class="headerlink" href="#insight-2" title="Permalink to this headline">#</a></h4>
+<p>Podemos proporcionar mas informacion que apoye la problematica inicial.</p>
+<ul class="simple">
+<li><p>Agregaremos mas informacion y evidencias</p></li>
+<li><p>Ampliamos todo sobre aquello que causa el problema</p></li>
+</ul>
+</section>
+<section id="climax">
+<h4>Climax<a class="headerlink" href="#climax" title="Permalink to this headline">#</a></h4>
+<p>Todo lo anterior debe conducir al climax de la narrativa. Es el momento donde explicamos nuestros insights. Proporcionamos información clara sobre lo que podría suceder si no se cambia nada.</p>
+</section>
+<section id="sig-paso">
+<h4>Sig. Paso<a class="headerlink" href="#sig-paso" title="Permalink to this headline">#</a></h4>
+<p>Ante problematicas debemos encontrar soluciones potenciales u oportunidades, recomendando un plan de accion a tomar. Necesitamos ser proactivos y guiar la audiencia a traves del entendimiento sobre nuestros resultados si queremos impactar el proceso de toma de decisiones.</p>
+</section>
+</section>
+<section id="conclusion-al-construir-una-narrativa">
+<h3>Conclusion al construir una narrativa…<a class="headerlink" href="#conclusion-al-construir-una-narrativa" title="Permalink to this headline">#</a></h3>
+<p>Al realizar un analisis pueden suceder un sin numero de situaciones, que a su vez impulsaran nuestra narrativa. Podemos explorar cómo cambia una característica con el tiempo o los patrones del ciclo de tiempo, por ejemplo, cómo las ventas de chocolate son más bajas en verano pero más altas en invierno. Podríamos centrarnos en cómo se relacionan dos variables entre si, por ejemplo, el precio del chocolate y la calificación del cliente, o mostrar similitudes y diferencias entre el consumo de chocolate entre adultos y niños. Además, podemos encontrar grupos en los datos, como consumidores altos de chocolate y café frente a consumidores bajos de chocolate y café. A medida que elaboramos nuestra narrativa, debemos asegurarnos de que estos puntos de datos hagan una historia relevante y reconocible.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Conceptos de la Comunicación de Datos</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Preparing_to_communicate_data.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Preparándonos para comunicar nuestros Datos</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
